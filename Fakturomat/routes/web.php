@@ -14,5 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
+});
+
+Route::get('/faktury', function () {
+    return view('invoices.index');
+});
+
+Route::get('/faktury/dodaj', function () {
+    return view('invoices.create');
 });
